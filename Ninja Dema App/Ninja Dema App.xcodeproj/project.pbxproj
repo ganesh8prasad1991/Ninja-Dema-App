@@ -13,6 +13,16 @@
 		D09CCAC626380554005E38C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09CCAC526380554005E38C7 /* Assets.xcassets */; };
 		D09CCAC926380554005E38C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CCAC726380554005E38C7 /* LaunchScreen.storyboard */; };
 		D09CCAD426380554005E38C7 /* Ninja_Dema_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CCAD326380554005E38C7 /* Ninja_Dema_AppTests.swift */; };
+		D09CCAEC26380F28005E38C7 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09CCAE926380F28005E38C7 /* GoogleSignIn.framework */; };
+		D09CCAED26380F28005E38C7 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09CCAE926380F28005E38C7 /* GoogleSignIn.framework */; };
+		D09CCAEE26380F28005E38C7 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09CCAEA26380F28005E38C7 /* GoogleSignInDependencies.framework */; };
+		D09CCAEF26380F28005E38C7 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09CCAEA26380F28005E38C7 /* GoogleSignInDependencies.framework */; };
+		D09CCAF026380F28005E38C7 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D09CCAEB26380F28005E38C7 /* GoogleSignIn.bundle */; };
+		D09CCAF126380F28005E38C7 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D09CCAEB26380F28005E38C7 /* GoogleSignIn.bundle */; };
+		D09CCAF426380F76005E38C7 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09CCAF326380F76005E38C7 /* LocalAuthentication.framework */; };
+		D09CCAF626380F7E005E38C7 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09CCAF526380F7E005E38C7 /* SafariServices.framework */; };
+		D09CCAF826380F87005E38C7 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09CCAF726380F87005E38C7 /* AuthenticationServices.framework */; };
+		D09CCAFA26380F92005E38C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09CCAF926380F92005E38C7 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,13 @@
 		D09CCACF26380554005E38C7 /* Ninja Dema AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ninja Dema AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09CCAD326380554005E38C7 /* Ninja_Dema_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninja_Dema_AppTests.swift; sourceTree = "<group>"; };
 		D09CCAD526380554005E38C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D09CCAE926380F28005E38C7 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		D09CCAEA26380F28005E38C7 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		D09CCAEB26380F28005E38C7 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		D09CCAF326380F76005E38C7 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		D09CCAF526380F7E005E38C7 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		D09CCAF726380F87005E38C7 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		D09CCAF926380F92005E38C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +60,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09CCAEE26380F28005E38C7 /* GoogleSignInDependencies.framework in Frameworks */,
+				D09CCAF826380F87005E38C7 /* AuthenticationServices.framework in Frameworks */,
+				D09CCAF426380F76005E38C7 /* LocalAuthentication.framework in Frameworks */,
+				D09CCAF626380F7E005E38C7 /* SafariServices.framework in Frameworks */,
+				D09CCAFA26380F92005E38C7 /* SystemConfiguration.framework in Frameworks */,
+				D09CCAEC26380F28005E38C7 /* GoogleSignIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09CCAEF26380F28005E38C7 /* GoogleSignInDependencies.framework in Frameworks */,
+				D09CCAED26380F28005E38C7 /* GoogleSignIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +87,7 @@
 				D09CCABB26380552005E38C7 /* Ninja Dema App */,
 				D09CCAD226380554005E38C7 /* Ninja Dema AppTests */,
 				D09CCABA26380552005E38C7 /* Products */,
+				D09CCAF226380F76005E38C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +103,7 @@
 		D09CCABB26380552005E38C7 /* Ninja Dema App */ = {
 			isa = PBXGroup;
 			children = (
+				D09CCADF26380EC9005E38C7 /* Google Signin Framework */,
 				D09CCADE263807C2005E38C7 /* Resources & plist files */,
 				D09CCABC26380552005E38C7 /* AppDelegate.swift */,
 				D09CCAC026380552005E38C7 /* ViewController.swift */,
@@ -102,6 +129,27 @@
 				D09CCACA26380554005E38C7 /* Info.plist */,
 			);
 			path = "Resources & plist files";
+			sourceTree = "<group>";
+		};
+		D09CCADF26380EC9005E38C7 /* Google Signin Framework */ = {
+			isa = PBXGroup;
+			children = (
+				D09CCAEB26380F28005E38C7 /* GoogleSignIn.bundle */,
+				D09CCAE926380F28005E38C7 /* GoogleSignIn.framework */,
+				D09CCAEA26380F28005E38C7 /* GoogleSignInDependencies.framework */,
+			);
+			path = "Google Signin Framework";
+			sourceTree = "<group>";
+		};
+		D09CCAF226380F76005E38C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D09CCAF926380F92005E38C7 /* SystemConfiguration.framework */,
+				D09CCAF726380F87005E38C7 /* AuthenticationServices.framework */,
+				D09CCAF526380F7E005E38C7 /* SafariServices.framework */,
+				D09CCAF326380F76005E38C7 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09CCAF026380F28005E38C7 /* GoogleSignIn.bundle in Resources */,
 				D09CCAC926380554005E38C7 /* LaunchScreen.storyboard in Resources */,
 				D09CCAC626380554005E38C7 /* Assets.xcassets in Resources */,
 				D09CCAC426380552005E38C7 /* Main.storyboard in Resources */,
@@ -195,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09CCAF126380F28005E38C7 /* GoogleSignIn.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,10 +418,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+				);
 				INFOPLIST_FILE = "Ninja Dema App/Resources & plist files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ninjademoapp.Ninja-Dema-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -387,10 +448,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+				);
 				INFOPLIST_FILE = "Ninja Dema App/Resources & plist files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ninjademoapp.Ninja-Dema-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,6 +478,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+				);
 				INFOPLIST_FILE = "Ninja Dema AppTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -427,6 +506,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
+				);
 				INFOPLIST_FILE = "Ninja Dema AppTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
