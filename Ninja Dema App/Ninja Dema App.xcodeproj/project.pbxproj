@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D09CCABD26380552005E38C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CCABC26380552005E38C7 /* AppDelegate.swift */; };
-		D09CCAC126380552005E38C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CCAC026380552005E38C7 /* ViewController.swift */; };
-		D09CCAC426380552005E38C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CCAC226380552005E38C7 /* Main.storyboard */; };
 		D09CCAC626380554005E38C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09CCAC526380554005E38C7 /* Assets.xcassets */; };
 		D09CCAC926380554005E38C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CCAC726380554005E38C7 /* LaunchScreen.storyboard */; };
 		D09CCAD426380554005E38C7 /* Ninja_Dema_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CCAD326380554005E38C7 /* Ninja_Dema_AppTests.swift */; };
@@ -23,6 +21,18 @@
 		D09CCAF626380F7E005E38C7 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09CCAF526380F7E005E38C7 /* SafariServices.framework */; };
 		D09CCAF826380F87005E38C7 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09CCAF726380F87005E38C7 /* AuthenticationServices.framework */; };
 		D09CCAFA26380F92005E38C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09CCAF926380F92005E38C7 /* SystemConfiguration.framework */; };
+		D09CCAFC26381321005E38C7 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = D09CCAFB26381321005E38C7 /* credentials.plist */; };
+		D09CCAFD26381321005E38C7 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = D09CCAFB26381321005E38C7 /* credentials.plist */; };
+		D09CCB0026381736005E38C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CCAFF26381736005E38C7 /* LoginViewController.swift */; };
+		D09CCB0126381736005E38C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CCAFF26381736005E38C7 /* LoginViewController.swift */; };
+		D09CCB0926383301005E38C7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CCB0826383301005E38C7 /* Login.storyboard */; };
+		D09CCB0A26383301005E38C7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CCB0826383301005E38C7 /* Login.storyboard */; };
+		D09CCB0E26383B7F005E38C7 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CCB0D26383B7F005E38C7 /* CryptoViewController.swift */; };
+		D09CCB0F26383B7F005E38C7 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CCB0D26383B7F005E38C7 /* CryptoViewController.swift */; };
+		D09CCB1126383BB5005E38C7 /* Crypto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CCB1026383BB5005E38C7 /* Crypto.storyboard */; };
+		D09CCB1226383BB5005E38C7 /* Crypto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CCB1026383BB5005E38C7 /* Crypto.storyboard */; };
+		D09CCB1526383C25005E38C7 /* UIViewController +.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CCB1426383C25005E38C7 /* UIViewController +.swift */; };
+		D09CCB1626383C25005E38C7 /* UIViewController +.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CCB1426383C25005E38C7 /* UIViewController +.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +48,6 @@
 /* Begin PBXFileReference section */
 		D09CCAB926380552005E38C7 /* Ninja Dema App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ninja Dema App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09CCABC26380552005E38C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D09CCAC026380552005E38C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D09CCAC326380552005E38C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D09CCAC526380554005E38C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D09CCAC826380554005E38C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D09CCACA26380554005E38C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +61,12 @@
 		D09CCAF526380F7E005E38C7 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		D09CCAF726380F87005E38C7 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		D09CCAF926380F92005E38C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D09CCAFB26381321005E38C7 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		D09CCAFF26381736005E38C7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D09CCB0826383301005E38C7 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D09CCB0D26383B7F005E38C7 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
+		D09CCB1026383BB5005E38C7 /* Crypto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Crypto.storyboard; sourceTree = "<group>"; };
+		D09CCB1426383C25005E38C7 /* UIViewController +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController +.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +117,12 @@
 		D09CCABB26380552005E38C7 /* Ninja Dema App */ = {
 			isa = PBXGroup;
 			children = (
+				D09CCB1326383C0F005E38C7 /* Extensions */,
+				D09CCB0C26383A7A005E38C7 /* Encrption & Decryption */,
+				D09CCAFE263815B3005E38C7 /* Login */,
 				D09CCADF26380EC9005E38C7 /* Google Signin Framework */,
 				D09CCADE263807C2005E38C7 /* Resources & plist files */,
 				D09CCABC26380552005E38C7 /* AppDelegate.swift */,
-				D09CCAC026380552005E38C7 /* ViewController.swift */,
-				D09CCAC226380552005E38C7 /* Main.storyboard */,
 				D09CCAC726380554005E38C7 /* LaunchScreen.storyboard */,
 			);
 			path = "Ninja Dema App";
@@ -126,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				D09CCAC526380554005E38C7 /* Assets.xcassets */,
+				D09CCAFB26381321005E38C7 /* credentials.plist */,
 				D09CCACA26380554005E38C7 /* Info.plist */,
 			);
 			path = "Resources & plist files";
@@ -150,6 +166,32 @@
 				D09CCAF326380F76005E38C7 /* LocalAuthentication.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D09CCAFE263815B3005E38C7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D09CCAFF26381736005E38C7 /* LoginViewController.swift */,
+				D09CCB0826383301005E38C7 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D09CCB0C26383A7A005E38C7 /* Encrption & Decryption */ = {
+			isa = PBXGroup;
+			children = (
+				D09CCB0D26383B7F005E38C7 /* CryptoViewController.swift */,
+				D09CCB1026383BB5005E38C7 /* Crypto.storyboard */,
+			);
+			path = "Encrption & Decryption";
+			sourceTree = "<group>";
+		};
+		D09CCB1326383C0F005E38C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D09CCB1426383C25005E38C7 /* UIViewController +.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +277,10 @@
 			files = (
 				D09CCAF026380F28005E38C7 /* GoogleSignIn.bundle in Resources */,
 				D09CCAC926380554005E38C7 /* LaunchScreen.storyboard in Resources */,
+				D09CCB0926383301005E38C7 /* Login.storyboard in Resources */,
+				D09CCAFC26381321005E38C7 /* credentials.plist in Resources */,
 				D09CCAC626380554005E38C7 /* Assets.xcassets in Resources */,
-				D09CCAC426380552005E38C7 /* Main.storyboard in Resources */,
+				D09CCB1126383BB5005E38C7 /* Crypto.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D09CCAF126380F28005E38C7 /* GoogleSignIn.bundle in Resources */,
+				D09CCB1226383BB5005E38C7 /* Crypto.storyboard in Resources */,
+				D09CCAFD26381321005E38C7 /* credentials.plist in Resources */,
+				D09CCB0A26383301005E38C7 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D09CCAC126380552005E38C7 /* ViewController.swift in Sources */,
+				D09CCB0026381736005E38C7 /* LoginViewController.swift in Sources */,
 				D09CCABD26380552005E38C7 /* AppDelegate.swift in Sources */,
+				D09CCB0E26383B7F005E38C7 /* CryptoViewController.swift in Sources */,
+				D09CCB1526383C25005E38C7 /* UIViewController +.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09CCB0126381736005E38C7 /* LoginViewController.swift in Sources */,
 				D09CCAD426380554005E38C7 /* Ninja_Dema_AppTests.swift in Sources */,
+				D09CCB0F26383B7F005E38C7 /* CryptoViewController.swift in Sources */,
+				D09CCB1626383C25005E38C7 /* UIViewController +.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,14 +331,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D09CCAC226380552005E38C7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D09CCAC326380552005E38C7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D09CCAC726380554005E38C7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

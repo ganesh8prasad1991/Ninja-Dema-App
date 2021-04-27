@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="8Nq-XC-V3e">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="UaK-Wg-vjf" customClass="LoginViewController" customModule="Ninja_Dema_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iXQ-5X-vZE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdU-K2-K7H">
+                                <rect key="frame" x="166.5" y="442.5" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94O-M9-eP7">
+                                <rect key="frame" x="30" y="536" width="354" height="30"/>
+                                <state key="normal" title="Sign in by Google"/>
+                                <connections>
+                                    <action selector="signInButtonHandler:" destination="UaK-Wg-vjf" eventType="touchUpInside" id="NIR-9o-NPb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wdU-K2-K7H" firstAttribute="centerY" secondItem="xKR-hB-rIA" secondAttribute="centerY" id="6Vr-0q-r2K"/>
+                            <constraint firstItem="94O-M9-eP7" firstAttribute="top" secondItem="wdU-K2-K7H" secondAttribute="bottom" constant="72.5" id="7h6-bh-bb1"/>
+                            <constraint firstItem="xKR-hB-rIA" firstAttribute="trailing" secondItem="94O-M9-eP7" secondAttribute="trailing" constant="30" id="Rfb-gh-txg"/>
+                            <constraint firstItem="wdU-K2-K7H" firstAttribute="centerX" secondItem="xKR-hB-rIA" secondAttribute="centerX" id="TlL-V2-pPZ"/>
+                            <constraint firstItem="94O-M9-eP7" firstAttribute="leading" secondItem="xKR-hB-rIA" secondAttribute="leading" constant="30" id="Vb6-Vt-2eN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xKR-hB-rIA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6p-rh-JQh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123" y="209"/>
+        </scene>
+    </scenes>
+</document>
