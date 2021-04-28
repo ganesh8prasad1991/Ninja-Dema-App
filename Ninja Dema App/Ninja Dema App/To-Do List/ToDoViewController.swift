@@ -82,6 +82,7 @@ class ToDoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "To-Do".localized
          setupButton()
     }
 }
@@ -105,8 +106,41 @@ extension ToDoViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCell.EditingStyle.delete {
-            todoTasks.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            showAlertWithHandler(title: "Delete".localized, message: "Are you sure you want to delete this task?".localized, indexPath: indexPath)
+        }
+    }
+    
+    
+    func showAlertWithHandler(title: String, message: String, indexPath: IndexPath) {
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        
+        // create a cancel action
+        let cancelAction = UIAlertAction(title: "Cancel".localized, style: .cancel)
+        
+        // add the cancel action to the alertController
+        alert.addAction(cancelAction)
+
+        // create an OK action
+        let OKAction = UIAlertAction(title: "OK".localized, style: .default) { [weak self](action) in
+            // handle response here.
+            self?.deleteRow(indexPath: indexPath)
+            
+        }
+        // add the OK action to the alert controller
+        alert.addAction(OKAction)
+        
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func deleteRow(indexPath: IndexPath) {
+        DispatchQueue.main.async {
+            self.todoTasks.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
         }
     }
 }

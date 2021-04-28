@@ -26,25 +26,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     
-    private func checkLoginStatus() {
+    func checkLoginStatus() {
         
-//        let loginStatus = GIDSignIn.sharedInstance()?.hasPreviousSignIn() ?? false
-//        if loginStatus {
-//            createViewConytroller("Crypto", vcName: "CryptoVC")
-//        }else {
-//            createViewConytroller("Login", vcName: "LoginVC")
-//        }
+        let loginStatus = GIDSignIn.sharedInstance()?.hasPreviousSignIn() ?? false
+        if loginStatus {
+            createSideMenuViewController()
+        }else {
+            createViewConytroller("Login", vcName: "LoginVC")
+        }
         
-        let storyboard = UIStoryboard(name: "Crypto", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "CryptoVC"
-        )
-        let menu = SideMenuNavigationController(rootViewController: viewController)
-        window = UIWindow()
-        window?.makeKeyAndVisible()
-        self.window?.rootViewController = menu
+        
 
     }
     
+    
+    private func createSideMenuViewController() {
+        let storyboard = UIStoryboard(name: "Crypto", bundle: nil)
+        
+        let viewController = storyboard.instantiateViewController(withIdentifier: "CryptoVC")
+        
+        let navController = SideMenuNavigationController(rootViewController: viewController)
+        
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        self.window?.rootViewController = navController
+    }
     
     private func createViewConytroller(_ storyboardName: String, vcName: String) {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)

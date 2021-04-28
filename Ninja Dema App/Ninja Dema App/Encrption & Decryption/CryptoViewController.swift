@@ -15,6 +15,8 @@ class CryptoViewController: UIViewController {
     //MARK: Properties
     @IBOutlet weak private var normalText: UITextField!
     @IBOutlet weak private var secretKey: UITextField!
+    @IBOutlet weak private var encryptButton: UIButton!
+    @IBOutlet weak private var decryptButton: UIButton!
     
     @IBOutlet weak private var encryptedLabel: UILabel! {
         didSet {
@@ -36,7 +38,7 @@ class CryptoViewController: UIViewController {
     
     private func setup() {
         showNavBar()
-        title = "Crypto"
+        title = "Encryption".localized
         
         let menu = MySideMenuController(with: SideMenuItem.allCases)
 
@@ -49,6 +51,14 @@ class CryptoViewController: UIViewController {
         SideMenuManager.default.addPanGestureToPresent(toView: view)
 
         addChildControllers()
+        
+        encryptButton.setTitle("Encrypt".localized, for: .normal)
+        decryptButton.setTitle("Decrypt".localized, for: .normal)
+        normalText.placeholder = "Message".localized
+        secretKey.placeholder = "Secret Key".localized
+        
+        
+//        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
     }
     
     
@@ -167,6 +177,9 @@ class CryptoViewController: UIViewController {
     }
     
     
+    @objc private func handleTap() {
+        self.view.endEditing(true)
+    }
 }
 
 
@@ -176,7 +189,7 @@ extension CryptoViewController: MenuControllerDelegate {
     func didSelectMenuItem(named: SideMenuItem) {
             sideMenu?.dismiss(animated: true, completion: nil)
 
-            title = named.rawValue
+        title = named.rawValue.localized
             switch named {
             case .cryto:
                 todoController.view.isHidden = true
@@ -196,7 +209,7 @@ extension CryptoViewController: MenuControllerDelegate {
                 changeLanguageController.view.isHidden = true
                 break
             case .logout:
-                logOut()
+                showAlertWithHandler(title: "Logout".localized, message: "Are you sure you want to logout?".localized)
                 break
             case .changeLanguage:
                 todoController.view.isHidden = true
@@ -222,5 +235,32 @@ extension CryptoViewController: MenuControllerDelegate {
         
         self.view.window?.rootViewController = navController
         
+    }
+    
+    
+    func showAlertWithHandler(title: String, message: String) {
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        
+        // create a cancel action
+        let cancelAction = UIAlertAction(title: "Cancel".localized, style: .cancel)
+        
+        // add the cancel action to the alertController
+        alert.addAction(cancelAction)
+
+        // create an OK action
+        let OKAction = UIAlertAction(title: "OK".localized, style: .default) { [weak self](action) in
+            // handle response here.
+            self?.logOut()
+            
+        }
+        // add the OK action to the alert controller
+        alert.addAction(OKAction)
+        
+        
+        present(alert, animated: true, completion: nil)
     }
 }

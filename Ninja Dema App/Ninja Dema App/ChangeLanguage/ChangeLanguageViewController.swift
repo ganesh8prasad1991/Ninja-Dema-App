@@ -14,13 +14,22 @@ class ChangeLanguageViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
+    struct LanguageModel {
+        let language: String
+        let code: String
+    }
+    
     private let languages = [
-        "English",
-        "Arabic"
+        LanguageModel(language: "English", code: "en"),
+        LanguageModel(language: "Arabic", code: "ar")
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Change Language".localized
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 }
 
@@ -33,12 +42,18 @@ extension ChangeLanguageViewController: UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = languages[indexPath.row]
+        cell.textLabel?.text = languages[indexPath.row].language
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        let code = languages[indexPath.item].code
+        if code == "en" {
+            Language.language = Language.english
+        }else {
+            Language.language = Language.arabic
+        }
+        
     }
 }

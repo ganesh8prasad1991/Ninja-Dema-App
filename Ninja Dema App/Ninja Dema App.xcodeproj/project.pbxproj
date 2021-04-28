@@ -34,6 +34,8 @@
 		D056098C26396F6100150B00 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056098B26396F6100150B00 /* StopwatchViewController.swift */; };
 		D056098E26396F7A00150B00 /* ChangeLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056098D26396F7A00150B00 /* ChangeLanguageViewController.swift */; };
 		D056099026396F8F00150B00 /* ChangeLanguage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D056098F26396F8F00150B00 /* ChangeLanguage.storyboard */; };
+		D05609922639810F00150B00 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05609912639810F00150B00 /* Localizable.swift */; };
+		D0560995263981E500150B00 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0560997263981E500150B00 /* Localizable.strings */; };
 		D09CCABD26380552005E38C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CCABC26380552005E38C7 /* AppDelegate.swift */; };
 		D09CCAC626380554005E38C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09CCAC526380554005E38C7 /* Assets.xcassets */; };
 		D09CCAC926380554005E38C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CCAC726380554005E38C7 /* LaunchScreen.storyboard */; };
@@ -100,6 +102,9 @@
 		D056098B26396F6100150B00 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		D056098D26396F7A00150B00 /* ChangeLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageViewController.swift; sourceTree = "<group>"; };
 		D056098F26396F8F00150B00 /* ChangeLanguage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangeLanguage.storyboard; sourceTree = "<group>"; };
+		D05609912639810F00150B00 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		D0560996263981E500150B00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D05609982639821900150B00 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D09CCAB926380552005E38C7 /* Ninja Dema App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ninja Dema App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09CCABC26380552005E38C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D09CCAC526380554005E38C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -245,6 +250,8 @@
 			children = (
 				D056098D26396F7A00150B00 /* ChangeLanguageViewController.swift */,
 				D056098F26396F8F00150B00 /* ChangeLanguage.storyboard */,
+				D05609912639810F00150B00 /* Localizable.swift */,
+				D0560997263981E500150B00 /* Localizable.strings */,
 			);
 			path = ChangeLanguage;
 			sourceTree = "<group>";
@@ -419,6 +426,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = D09CCAB026380552005E38C7;
 			productRefGroup = D09CCABA26380552005E38C7 /* Products */;
@@ -441,6 +449,7 @@
 				D056099026396F8F00150B00 /* ChangeLanguage.storyboard in Resources */,
 				D09CCAC926380554005E38C7 /* LaunchScreen.storyboard in Resources */,
 				D09CCB0926383301005E38C7 /* Login.storyboard in Resources */,
+				D0560995263981E500150B00 /* Localizable.strings in Resources */,
 				D0560950263927B400150B00 /* ToDo.storyboard in Resources */,
 				D09CCAFC26381321005E38C7 /* credentials.plist in Resources */,
 				D09CCAC626380554005E38C7 /* Assets.xcassets in Resources */,
@@ -474,6 +483,7 @@
 				D0560979263963A200150B00 /* Deprecations.swift in Sources */,
 				D056098E26396F7A00150B00 /* ChangeLanguageViewController.swift in Sources */,
 				D0560975263963A200150B00 /* Print.swift in Sources */,
+				D05609922639810F00150B00 /* Localizable.swift in Sources */,
 				D0560980263963A200150B00 /* SideMenuNavigationController.swift in Sources */,
 				D0560982263963A200150B00 /* UITableViewVibrantCell.swift in Sources */,
 				D056095D263954FB00150B00 /* TodoModel.swift in Sources */,
@@ -519,6 +529,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D0560997263981E500150B00 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0560996263981E500150B00 /* en */,
+				D05609982639821900150B00 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		D09CCAC726380554005E38C7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -534,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -594,6 +614,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

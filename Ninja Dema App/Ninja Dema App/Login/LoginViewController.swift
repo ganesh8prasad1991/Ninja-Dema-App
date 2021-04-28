@@ -14,17 +14,16 @@ class LoginViewController: UIViewController {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        setup()
     }
     
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setup()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
     }
     
     private func setup() {
@@ -53,7 +52,12 @@ extension LoginViewController: GIDSignInDelegate {
             return
         }
         
-        pushVC("CryptoVC", storyboardName: "Crypto")
+        let storyboard = UIStoryboard(name: "Crypto", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "CryptoVC"
+        )
+        let menu = SideMenuNavigationController(rootViewController: viewController)
+        self.view.window?.makeKeyAndVisible()
+        self.view.window?.rootViewController = menu
         
     }
 }

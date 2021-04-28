@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WrA-vo-1Zm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -83,7 +83,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="vDh-NG-4yS">
-                        <barButtonItem key="leftBarButtonItem" image="hamburger" style="plain" id="cn7-kB-nM3">
+                        <barButtonItem key="leftBarButtonItem" image="hamburger" id="cn7-kB-nM3">
                             <connections>
                                 <action selector="didTapMenuButton" destination="lF3-8I-Vsp" id="m3o-UK-0dh"/>
                             </connections>
@@ -91,7 +91,9 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="decryptButton" destination="nO5-nJ-Hfp" id="IpJ-P0-Adc"/>
                         <outlet property="decryptedLabel" destination="OnA-dp-Yus" id="zLb-9N-h6k"/>
+                        <outlet property="encryptButton" destination="JT9-4D-Fd8" id="t4b-02-FUo"/>
                         <outlet property="encryptedLabel" destination="g6q-EE-O50" id="T4e-WU-skH"/>
                         <outlet property="normalText" destination="osG-jG-TWK" id="ASf-VA-kkO"/>
                         <outlet property="secretKey" destination="OZ2-bn-2UA" id="8FC-LR-20V"/>

@@ -13,9 +13,9 @@ protocol MenuControllerDelegate {
 }
 
 enum SideMenuItem: String, CaseIterable {
-    case cryto = "Crypto"
-    case todo = "ToDo"
-    case stopwatch = "StopWatch"
+    case cryto = "Encryption"
+    case todo = "To-Do"
+    case stopwatch = "Stopwatch"
     case changeLanguage = "Change Language"
     case logout = "Logout"
 }
@@ -54,7 +54,7 @@ class MySideMenuController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = menuItems[indexPath.row].rawValue
+        cell.textLabel?.text = menuItems[indexPath.row].rawValue.localized
         cell.textLabel?.textColor = .white
         cell.backgroundColor = color
         cell.contentView.backgroundColor = color

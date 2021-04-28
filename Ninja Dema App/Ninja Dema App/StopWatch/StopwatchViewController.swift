@@ -22,6 +22,8 @@ class StopwatchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Stopwatch".localized
+        
         timeLabel.text = String(counter)
     }
     
