@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D056094B263923EB00150B00 /* UILabel + Copable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056094A263923EB00150B00 /* UILabel + Copable.swift */; };
+		D056094E2639279C00150B00 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056094D2639279C00150B00 /* ToDoViewController.swift */; };
+		D0560950263927B400150B00 /* ToDo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D056094F263927B400150B00 /* ToDo.storyboard */; };
+		D056095626394B7400150B00 /* DateTimeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056095526394B7400150B00 /* DateTimeTextField.swift */; };
+		D056095926394DEE00150B00 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056095826394DEE00150B00 /* Date+.swift */; };
+		D056095B2639503C00150B00 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056095A2639503C00150B00 /* AddTodoViewController.swift */; };
+		D056095D263954FB00150B00 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056095C263954FB00150B00 /* TodoModel.swift */; };
+		D05609602639598000150B00 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056095F2639598000150B00 /* TodoTableViewCell.swift */; };
+		D0560975263963A200150B00 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0560967263963A200150B00 /* Print.swift */; };
+		D0560976263963A200150B00 /* SideMenuAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0560968263963A200150B00 /* SideMenuAnimationController.swift */; };
+		D0560977263963A200150B00 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0560969263963A200150B00 /* Initializable.swift */; };
+		D0560978263963A200150B00 /* SideMenuInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056096A263963A200150B00 /* SideMenuInteractionController.swift */; };
+		D0560979263963A200150B00 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056096B263963A200150B00 /* Deprecations.swift */; };
+		D056097A263963A200150B00 /* SideMenuPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056096C263963A200150B00 /* SideMenuPresentationStyle.swift */; };
+		D056097B263963A200150B00 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056096D263963A200150B00 /* Protected.swift */; };
+		D056097C263963A200150B00 /* SideMenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056096E263963A200150B00 /* SideMenuPresentationController.swift */; };
+		D056097D263963A200150B00 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056096F263963A200150B00 /* SideMenuManager.swift */; };
+		D056097E263963A200150B00 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0560970263963A200150B00 /* Extensions.swift */; };
+		D056097F263963A200150B00 /* SideMenuPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0560971263963A200150B00 /* SideMenuPushCoordinator.swift */; };
+		D0560980263963A200150B00 /* SideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0560972263963A200150B00 /* SideMenuNavigationController.swift */; };
+		D0560981263963A200150B00 /* SideMenuTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0560973263963A200150B00 /* SideMenuTransitionController.swift */; };
+		D0560982263963A200150B00 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0560974263963A200150B00 /* UITableViewVibrantCell.swift */; };
+		D0560984263963DB00150B00 /* MySideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0560983263963DB00150B00 /* MySideMenuController.swift */; };
+		D056098A26396F5200150B00 /* Stopwatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D056098926396F5200150B00 /* Stopwatch.storyboard */; };
+		D056098C26396F6100150B00 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056098B26396F6100150B00 /* StopwatchViewController.swift */; };
+		D056098E26396F7A00150B00 /* ChangeLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056098D26396F7A00150B00 /* ChangeLanguageViewController.swift */; };
+		D056099026396F8F00150B00 /* ChangeLanguage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D056098F26396F8F00150B00 /* ChangeLanguage.storyboard */; };
 		D09CCABD26380552005E38C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CCABC26380552005E38C7 /* AppDelegate.swift */; };
 		D09CCAC626380554005E38C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09CCAC526380554005E38C7 /* Assets.xcassets */; };
 		D09CCAC926380554005E38C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CCAC726380554005E38C7 /* LaunchScreen.storyboard */; };
@@ -46,6 +73,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D056094A263923EB00150B00 /* UILabel + Copable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Copable.swift"; sourceTree = "<group>"; };
+		D056094D2639279C00150B00 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		D056094F263927B400150B00 /* ToDo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToDo.storyboard; sourceTree = "<group>"; };
+		D056095526394B7400150B00 /* DateTimeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeTextField.swift; sourceTree = "<group>"; };
+		D056095826394DEE00150B00 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		D056095A2639503C00150B00 /* AddTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
+		D056095C263954FB00150B00 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		D056095F2639598000150B00 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		D0560967263963A200150B00 /* Print.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
+		D0560968263963A200150B00 /* SideMenuAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuAnimationController.swift; sourceTree = "<group>"; };
+		D0560969263963A200150B00 /* Initializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initializable.swift; sourceTree = "<group>"; };
+		D056096A263963A200150B00 /* SideMenuInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuInteractionController.swift; sourceTree = "<group>"; };
+		D056096B263963A200150B00 /* Deprecations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deprecations.swift; sourceTree = "<group>"; };
+		D056096C263963A200150B00 /* SideMenuPresentationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuPresentationStyle.swift; sourceTree = "<group>"; };
+		D056096D263963A200150B00 /* Protected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
+		D056096E263963A200150B00 /* SideMenuPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuPresentationController.swift; sourceTree = "<group>"; };
+		D056096F263963A200150B00 /* SideMenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuManager.swift; sourceTree = "<group>"; };
+		D0560970263963A200150B00 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D0560971263963A200150B00 /* SideMenuPushCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuPushCoordinator.swift; sourceTree = "<group>"; };
+		D0560972263963A200150B00 /* SideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuNavigationController.swift; sourceTree = "<group>"; };
+		D0560973263963A200150B00 /* SideMenuTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTransitionController.swift; sourceTree = "<group>"; };
+		D0560974263963A200150B00 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		D0560983263963DB00150B00 /* MySideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySideMenuController.swift; sourceTree = "<group>"; };
+		D056098926396F5200150B00 /* Stopwatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stopwatch.storyboard; sourceTree = "<group>"; };
+		D056098B26396F6100150B00 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		D056098D26396F7A00150B00 /* ChangeLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageViewController.swift; sourceTree = "<group>"; };
+		D056098F26396F8F00150B00 /* ChangeLanguage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangeLanguage.storyboard; sourceTree = "<group>"; };
 		D09CCAB926380552005E38C7 /* Ninja Dema App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ninja Dema App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09CCABC26380552005E38C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D09CCAC526380554005E38C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +149,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0560948263923B600150B00 /* UIVIewController */ = {
+			isa = PBXGroup;
+			children = (
+				D09CCB1426383C25005E38C7 /* UIViewController +.swift */,
+			);
+			path = UIVIewController;
+			sourceTree = "<group>";
+		};
+		D0560949263923C400150B00 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				D056094A263923EB00150B00 /* UILabel + Copable.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		D056094C2639277900150B00 /* To-Do List */ = {
+			isa = PBXGroup;
+			children = (
+				D056095E2639596100150B00 /* ToDoTVCell */,
+				D056094D2639279C00150B00 /* ToDoViewController.swift */,
+				D056094F263927B400150B00 /* ToDo.storyboard */,
+				D056095A2639503C00150B00 /* AddTodoViewController.swift */,
+				D056095C263954FB00150B00 /* TodoModel.swift */,
+			);
+			path = "To-Do List";
+			sourceTree = "<group>";
+		};
+		D056095426394B5800150B00 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				D056095526394B7400150B00 /* DateTimeTextField.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		D056095726394DDD00150B00 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				D056095826394DEE00150B00 /* Date+.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		D056095E2639596100150B00 /* ToDoTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				D056095F2639598000150B00 /* TodoTableViewCell.swift */,
+			);
+			path = ToDoTVCell;
+			sourceTree = "<group>";
+		};
+		D056096126395ED200150B00 /* SideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0560966263963A200150B00 /* SideMenu */,
+				D0560983263963DB00150B00 /* MySideMenuController.swift */,
+			);
+			path = SideViewController;
+			sourceTree = "<group>";
+		};
+		D0560966263963A200150B00 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D0560967263963A200150B00 /* Print.swift */,
+				D0560968263963A200150B00 /* SideMenuAnimationController.swift */,
+				D0560969263963A200150B00 /* Initializable.swift */,
+				D056096A263963A200150B00 /* SideMenuInteractionController.swift */,
+				D056096B263963A200150B00 /* Deprecations.swift */,
+				D056096C263963A200150B00 /* SideMenuPresentationStyle.swift */,
+				D056096D263963A200150B00 /* Protected.swift */,
+				D056096E263963A200150B00 /* SideMenuPresentationController.swift */,
+				D056096F263963A200150B00 /* SideMenuManager.swift */,
+				D0560970263963A200150B00 /* Extensions.swift */,
+				D0560971263963A200150B00 /* SideMenuPushCoordinator.swift */,
+				D0560972263963A200150B00 /* SideMenuNavigationController.swift */,
+				D0560973263963A200150B00 /* SideMenuTransitionController.swift */,
+				D0560974263963A200150B00 /* UITableViewVibrantCell.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		D056098726396F2900150B00 /* StopWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D056098926396F5200150B00 /* Stopwatch.storyboard */,
+				D056098B26396F6100150B00 /* StopwatchViewController.swift */,
+			);
+			path = StopWatch;
+			sourceTree = "<group>";
+		};
+		D056098826396F3200150B00 /* ChangeLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				D056098D26396F7A00150B00 /* ChangeLanguageViewController.swift */,
+				D056098F26396F8F00150B00 /* ChangeLanguage.storyboard */,
+			);
+			path = ChangeLanguage;
+			sourceTree = "<group>";
+		};
 		D09CCAB026380552005E38C7 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +271,10 @@
 		D09CCABB26380552005E38C7 /* Ninja Dema App */ = {
 			isa = PBXGroup;
 			children = (
+				D056098826396F3200150B00 /* ChangeLanguage */,
+				D056098726396F2900150B00 /* StopWatch */,
+				D056096126395ED200150B00 /* SideViewController */,
+				D056094C2639277900150B00 /* To-Do List */,
 				D09CCB1326383C0F005E38C7 /* Extensions */,
 				D09CCB0C26383A7A005E38C7 /* Encrption & Decryption */,
 				D09CCAFE263815B3005E38C7 /* Login */,
@@ -189,7 +347,10 @@
 		D09CCB1326383C0F005E38C7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D09CCB1426383C25005E38C7 /* UIViewController +.swift */,
+				D056095726394DDD00150B00 /* Date */,
+				D056095426394B5800150B00 /* UITextField */,
+				D0560949263923C400150B00 /* UILabel */,
+				D0560948263923B600150B00 /* UIVIewController */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -276,8 +437,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D09CCAF026380F28005E38C7 /* GoogleSignIn.bundle in Resources */,
+				D056098A26396F5200150B00 /* Stopwatch.storyboard in Resources */,
+				D056099026396F8F00150B00 /* ChangeLanguage.storyboard in Resources */,
 				D09CCAC926380554005E38C7 /* LaunchScreen.storyboard in Resources */,
 				D09CCB0926383301005E38C7 /* Login.storyboard in Resources */,
+				D0560950263927B400150B00 /* ToDo.storyboard in Resources */,
 				D09CCAFC26381321005E38C7 /* credentials.plist in Resources */,
 				D09CCAC626380554005E38C7 /* Assets.xcassets in Resources */,
 				D09CCB1126383BB5005E38C7 /* Crypto.storyboard in Resources */,
@@ -302,10 +466,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D056094B263923EB00150B00 /* UILabel + Copable.swift in Sources */,
+				D0560977263963A200150B00 /* Initializable.swift in Sources */,
+				D056094E2639279C00150B00 /* ToDoViewController.swift in Sources */,
 				D09CCB0026381736005E38C7 /* LoginViewController.swift in Sources */,
+				D056097B263963A200150B00 /* Protected.swift in Sources */,
+				D0560979263963A200150B00 /* Deprecations.swift in Sources */,
+				D056098E26396F7A00150B00 /* ChangeLanguageViewController.swift in Sources */,
+				D0560975263963A200150B00 /* Print.swift in Sources */,
+				D0560980263963A200150B00 /* SideMenuNavigationController.swift in Sources */,
+				D0560982263963A200150B00 /* UITableViewVibrantCell.swift in Sources */,
+				D056095D263954FB00150B00 /* TodoModel.swift in Sources */,
 				D09CCABD26380552005E38C7 /* AppDelegate.swift in Sources */,
+				D056097F263963A200150B00 /* SideMenuPushCoordinator.swift in Sources */,
+				D056097E263963A200150B00 /* Extensions.swift in Sources */,
+				D056095B2639503C00150B00 /* AddTodoViewController.swift in Sources */,
 				D09CCB0E26383B7F005E38C7 /* CryptoViewController.swift in Sources */,
+				D05609602639598000150B00 /* TodoTableViewCell.swift in Sources */,
+				D056097A263963A200150B00 /* SideMenuPresentationStyle.swift in Sources */,
+				D056097C263963A200150B00 /* SideMenuPresentationController.swift in Sources */,
+				D0560981263963A200150B00 /* SideMenuTransitionController.swift in Sources */,
+				D0560984263963DB00150B00 /* MySideMenuController.swift in Sources */,
+				D056095626394B7400150B00 /* DateTimeTextField.swift in Sources */,
+				D056098C26396F6100150B00 /* StopwatchViewController.swift in Sources */,
 				D09CCB1526383C25005E38C7 /* UIViewController +.swift in Sources */,
+				D0560978263963A200150B00 /* SideMenuInteractionController.swift in Sources */,
+				D056095926394DEE00150B00 /* Date+.swift in Sources */,
+				D0560976263963A200150B00 /* SideMenuAnimationController.swift in Sources */,
+				D056097D263963A200150B00 /* SideMenuManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +658,7 @@
 					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
 				);
 				INFOPLIST_FILE = "Ninja Dema App/Resources & plist files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,6 +689,7 @@
 					"$(PROJECT_DIR)/Ninja\\ Dema\\ App/Google\\ Signin\\ Framework",
 				);
 				INFOPLIST_FILE = "Ninja Dema App/Resources & plist files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

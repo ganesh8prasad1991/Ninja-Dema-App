@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stopwatch View Controller-->
+        <scene sceneID="0Ro-QU-zVG">
+            <objects>
+                <viewController storyboardIdentifier="StopwatchVC" id="0l3-PV-2pM" customClass="StopwatchViewController" customModule="Ninja_Dema_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T39-7r-AE0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Qzs-uL-nad">
+                                <rect key="frame" x="20" y="327" width="374" height="252"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdB-Nb-e7E">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFU-V5-icb">
+                                        <rect key="frame" x="0.0" y="64" width="374" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startTimer:" destination="0l3-PV-2pM" eventType="touchUpInside" id="CcL-p1-QZR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyG-RK-f6p">
+                                        <rect key="frame" x="0.0" y="140" width="374" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Pause"/>
+                                        <connections>
+                                            <action selector="pauseTimer:" destination="0l3-PV-2pM" eventType="touchUpInside" id="blV-5N-79g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLi-2M-tFj">
+                                        <rect key="frame" x="0.0" y="216" width="374" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopTimer:" destination="0l3-PV-2pM" eventType="touchUpInside" id="SgI-27-axJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qzs-uL-nad" firstAttribute="leading" secondItem="QLE-W6-8da" secondAttribute="leading" constant="20" id="5Qh-bw-3TC"/>
+                            <constraint firstItem="QLE-W6-8da" firstAttribute="trailing" secondItem="Qzs-uL-nad" secondAttribute="trailing" constant="20" id="V7S-UJ-4sH"/>
+                            <constraint firstItem="Qzs-uL-nad" firstAttribute="centerY" secondItem="QLE-W6-8da" secondAttribute="centerY" id="a9z-na-3Cd"/>
+                            <constraint firstItem="Qzs-uL-nad" firstAttribute="centerX" secondItem="QLE-W6-8da" secondAttribute="centerX" id="rLe-ey-7Wo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QLE-W6-8da"/>
+                    </view>
+                    <connections>
+                        <outlet property="pauseButton" destination="eyG-RK-f6p" id="g7F-kK-1zJ"/>
+                        <outlet property="startButton" destination="CFU-V5-icb" id="zX9-ta-Fx0"/>
+                        <outlet property="stopButton" destination="bLi-2M-tFj" id="q1C-hm-K0h"/>
+                        <outlet property="timeLabel" destination="qdB-Nb-e7E" id="BB2-iQ-H7I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2E-3W-eBu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166.66666666666669" y="184.82142857142856"/>
+        </scene>
+    </scenes>
+</document>

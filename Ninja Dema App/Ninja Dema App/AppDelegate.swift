@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Ninja Dema App
 //
-//  Created by Ramniwas Patidar(Xebia) on 27/04/21.
+//  Created by Ganesh Prasad on 27/04/21.
 //  Copyright © 2021 Ninja Dema App. All rights reserved.
 //
 
@@ -28,20 +28,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func checkLoginStatus() {
         
-        let loginStatus = GIDSignIn.sharedInstance()?.hasPreviousSignIn() ?? false
-        if loginStatus {
-            createViewConytroller("Crypto", vcName: "CryptoVC")
-        }else {
-            createViewConytroller("Login", vcName: "LoginVC")
-        }
+//        let loginStatus = GIDSignIn.sharedInstance()?.hasPreviousSignIn() ?? false
+//        if loginStatus {
+//            createViewConytroller("Crypto", vcName: "CryptoVC")
+//        }else {
+//            createViewConytroller("Login", vcName: "LoginVC")
+//        }
+        
+        let storyboard = UIStoryboard(name: "Crypto", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "CryptoVC"
+        )
+        let menu = SideMenuNavigationController(rootViewController: viewController)
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        self.window?.rootViewController = menu
+
     }
     
     
     private func createViewConytroller(_ storyboardName: String, vcName: String) {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
-        let loginViewController = storyboard.instantiateViewController(identifier: vcName)
         
-        let navController = UINavigationController(rootViewController: loginViewController)
+        let viewController = storyboard.instantiateViewController(withIdentifier: vcName)
+        
+        let navController = UINavigationController(rootViewController: viewController)
         
         window = UIWindow()
         window?.makeKeyAndVisible()

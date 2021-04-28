@@ -7,6 +7,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="rv2-YZ-klv">
+            <objects>
+                <navigationController id="WrA-vo-1Zm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5eI-Pa-rTv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lF3-8I-Vsp" kind="relationship" relationship="rootViewController" id="orL-aI-TJT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gVK-rC-Lrw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1219" y="24"/>
+        </scene>
         <!--Crypto View Controller-->
         <scene sceneID="TpF-gz-quh">
             <objects>
@@ -14,13 +30,79 @@
                     <view key="view" contentMode="scaleToFill" id="SsU-i2-Gfc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MUk-0q-owe">
+                                <rect key="frame" x="20" y="128" width="374" height="228"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Normal Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="osG-jG-TWK">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Secret Key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OZ2-bn-2UA">
+                                        <rect key="frame" x="0.0" y="54" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JT9-4D-Fd8">
+                                        <rect key="frame" x="0.0" y="108" width="374" height="30"/>
+                                        <state key="normal" title="Encrypt"/>
+                                        <connections>
+                                            <action selector="encryptHandler:" destination="lF3-8I-Vsp" eventType="touchUpInside" id="niu-y2-Kd3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nO5-nJ-Hfp">
+                                        <rect key="frame" x="0.0" y="158" width="374" height="30"/>
+                                        <state key="normal" title="Decrypt"/>
+                                        <connections>
+                                            <action selector="decryptHandler:" destination="lF3-8I-Vsp" eventType="touchUpInside" id="efb-BR-yb8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6q-EE-O50">
+                                        <rect key="frame" x="0.0" y="208" width="374" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnA-dp-Yus">
+                                        <rect key="frame" x="0.0" y="228" width="374" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="b8q-cz-von" firstAttribute="trailing" secondItem="MUk-0q-owe" secondAttribute="trailing" constant="20" id="3T7-JZ-hTH"/>
+                            <constraint firstItem="MUk-0q-owe" firstAttribute="leading" secondItem="b8q-cz-von" secondAttribute="leading" constant="20" id="Gnx-lO-bqn"/>
+                            <constraint firstItem="MUk-0q-owe" firstAttribute="top" secondItem="b8q-cz-von" secondAttribute="top" constant="40" id="U7V-98-fif"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="b8q-cz-von"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="vDh-NG-4yS">
+                        <barButtonItem key="leftBarButtonItem" image="hamburger" style="plain" id="cn7-kB-nM3">
+                            <connections>
+                                <action selector="didTapMenuButton" destination="lF3-8I-Vsp" id="m3o-UK-0dh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="decryptedLabel" destination="OnA-dp-Yus" id="zLb-9N-h6k"/>
+                        <outlet property="encryptedLabel" destination="g6q-EE-O50" id="T4e-WU-skH"/>
+                        <outlet property="normalText" destination="osG-jG-TWK" id="ASf-VA-kkO"/>
+                        <outlet property="secretKey" destination="OZ2-bn-2UA" id="8FC-LR-20V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qi0-UG-ydb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="214"/>
+            <point key="canvasLocation" x="-320" y="11"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hamburger" width="30" height="30"/>
+    </resources>
 </document>

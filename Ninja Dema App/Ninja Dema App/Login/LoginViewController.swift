@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  Ninja Dema App
 //
-//  Created by Ramniwas Patidar(Xebia) on 27/04/21.
+//  Created by Ganesh Prasad on 27/04/21.
 //  Copyright © 2021 Ninja Dema App. All rights reserved.
 //
 
